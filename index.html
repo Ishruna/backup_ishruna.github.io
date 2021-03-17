@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UFT-8">
+<title>Riniki Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.pale_blue {
+        background-color: #aeb4b5;
+		}
+
+</style>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%% STYLE  FOR SLIDE SHOW %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<style>
+	.mySlides {display:none}
+	.w3-left, .w3-right, .w3-badge {cursor:pointer}
+	.w3-badge {height:13px;width:13px;padding:0}
+</style>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%% LOADING THE STYLE SHEET %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<link rel="stylesheet" href="w3.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%% MAIN BODY OF THE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<body>
+
+<!-- wc-wide: letter spacing 4px -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%% NAVIGATION BAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<div class="w3-top w3-bar w3-white w3-wide w3-padding w3-card">
+	<a href="#home" class="w3-bar-item w3-button"><b>Riniki's</b> Gallery</a>
+	
+	<!-- Float links to the right. Hide them on small screens -->
+	<div class="w3-right w3-hide-small">
+		<a href="#about" class="w3-bar-item w3-button">About</a>
+		<a href="#projects" class="w3-bar-item w3-button">Portfolio</a>
+		<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+	</div>
+</div>
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%% Header %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- Page Start -->
+<div id="home" class="w3-content" style="max-width:1564px">
+	<!-- Image in Display Container -->
+	<div class="w3-display-container w3-content" style="max-width:1564px;">
+		<img class="w3-image" src="lilly_pond.jpg" alt="Painting of A Lilly Pond (inspired by Monet)" width="100%">
+		<div class="w3-display-middle w3-margin-top w3-center">
+			<div class="cover">
+				Mir Ishruna Muniyat <br>
+				(Riniki)
+			</div>
+		</div>
+    </div>
+
+<!-- Page End -->
+</div>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%% ABOUT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<div id="about" class="w3-padding-top-64">
+	<div class="about_row">
+		<div class="about_column">
+			<div class="w3-half w3-padding-large w3-hide-small">
+				<img src="Images/Abstract in Watercolor.png" class="w3-round w3-image" alt="Abstract_art_in_watercolor" style="width:100%">
+			</div>
+		</div>
+		
+		<div class="about_column">
+			<div class="w3-half w3-padding-large">
+				<h1 class="w3-center w3-wide">About Me</h1><br>
+				<h5 class="w3-center"> I am blah</h5>
+				<p class="w3-large">
+					Blah....
+				</p>
+				<p class="w3-large w3-text-grey w3-hide-medium">
+					BLAH		
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%% Portfolio %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- Slides -->
+<div id="projects" class="w3-center w3-padding-top-64">
+	<h1 class="w3-wide">Portfolio</h1><br>
+	<h5> Here you can see my work.</h5>
+	<img class="slides w3-padding-large" src="Gallery/Art of Science/final_600dpi_info_2.png" width="50%">
+	<img class="slides w3-padding-large" src="Gallery/Art of Science/final_cover_v4.png" width="50%">
+	<script>
+	w3.slideshow(".slides", 1500);
+	</script>
+</div>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%% CONTACT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<div id="contact" class="w3-padding-top-64">
+	<div class="about_row" style="background-color:#dde6e8;">
+		<div class="about_column">
+			<div class="w3-half w3-padding-large w3-hide-small">
+				<img id="contact" src="Images/contact.png" class="w3-image w3-greyscale" alt="Map" style="width:100%">
+			</div>
+		</div>
+		
+		<div class="about_column">
+			<div class="w3-half w3-padding-large w3-hide-smal">
+				<h2 class="w3-border-bottom w3-wide 3-border-light-grey">Contact</h2>
+				<p>Lets get in touch and talk about your next project</p>
+				<div class="pale_blue w3-round">
+					<div class="w3-container w3-padding-large w3-grayscale-min w3-large">
+						<form action="/action_page.php" target="_blank">
+							<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+							<input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+							<input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+							<input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+							<button class="w3-button w3-black w3-section" type="submit">
+								<i class="fa fa-paper-plane"></i> SEND MESSAGE
+							</button>
+						</form>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%% FOOTER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<div class="w3-white w3-wide w3-padding">
+	<!-- background-color:#dde6e8; -->
+	<p class="w3-center w3-large w3-padding-32" style="font-size:10px">Follow me on <a href="https://www.instagram.com/art_by_riniki/" title="instagram" target="_blank">instagram</a>, and <a href="https://ishruna_muniyat.artstation.com/" title="artstation" target="_blank">artstation</a>.</p>
+</div>
+
+</body>
+</html>
