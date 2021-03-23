@@ -12,7 +12,7 @@
 </style>
 
 <style>
-	.cover-photo {
+.cover-photo {
 		width: 100%;
 		height: auto;
 }
@@ -29,6 +29,20 @@
   transform: translate(-50%, -50%);
 }
 
+.slideshow_container {
+  width: 800px; /*any size*/
+  height: 800px; /*any size*/
+}
+
+.object-fit-slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*magic*/
+}
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
 </style>
 			
 <!-- %%%%%%%%%%%%%%%%%%%%%% STYLE  FOR SLIDE SHOW %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
@@ -64,28 +78,13 @@
 
 
 
-	<!-- Image in Display Container -->
-
-	<!--
-		<img class="cover-photo" src="Images/lilly_pond.jpg" alt="Painting of A Lilly Pond (inspired by Monet)">
-	
-<div class="cover" style="background-image: url('Images/lilly_pond.jpg'); background-size:cover; background-repeat: no-repeat;">
-	Mir Ishruna Muniyat <br>
-	(Riniki)
-
-</div>
--->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%% Header %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <div class="container" style="padding-top: 25px;">
 	<img src="Images/lilly_pond.jpg" style="width:100%;">
 	<div class="centered cover"> Mir Ishruna Muniyat <br> (Riniki) </div>
 </div>
-<!-- Page End -->
-
-
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-<!-- %%%%%%%%%%%%%%%%%%%%%% Header %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-<!-- Page Start -->
 
 
 
@@ -119,15 +118,54 @@
 <!-- %%%%%%%%%%%%%%%%%%%%%% Portfolio %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <!-- Slides -->
+	
 <div id="projects" class="w3-center w3-padding-top-64">
 	<h1 class="w3-wide">Portfolio</h1><br>
 	<h5> Here you can see my work.</h5>
-	<img class="slides w3-padding-large" src="Gallery/Art of Science/final_600dpi_info_2.png" width="50%">
-	<img class="slides w3-padding-large" src="Gallery/Art of Science/final_cover_v4.png" width="50%">
-	<script>
-	w3.slideshow(".slides", 1500);
-	</script>
 </div>
+
+<div class="w3-content w3-display-container">
+    <img class="object-fit-slide" src="Gallery/Art of Science/final_600dpi_info_2.png">
+	<img class="object-fit-slide" src="Gallery/Art of Science/final_cover_v4.png">
+	<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+		<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+			<div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+			</div>
+	</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("object-fit-slide");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <!-- %%%%%%%%%%%%%%%%%%%%%% CONTACT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
@@ -146,14 +184,15 @@
 				<p>Lets get in touch and talk about your next project</p>
 				<div class="pale_blue w3-round">
 					<div class="w3-container w3-padding-large w3-grayscale-min w3-large">
-						<form action="/action_page.php" target="_blank">
-							<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-							<input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-							<input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-							<input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
-							<button class="w3-button w3-black w3-section" type="submit">
-								<i class="fa fa-paper-plane"></i> SEND MESSAGE
-							</button>
+						<form action="mailto:ishruna.muniyat@gmail.com" method="post" enctype="text/plain">
+							Name:<br>
+							<input type="text" name="name"><br>
+							E-mail:<br>
+							<input type="text" name="mail"><br>
+							Comment:<br>
+							<input type="text" name="comment" size="50"><br><br>
+							<input type="submit" value="Send">
+							<input type="reset" value="Reset">
 						</form>
 					</div>
 				</div>		
