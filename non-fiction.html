@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	.mySlides {display:none}
+	.w3-left, .w3-right, .w3-badge {cursor:pointer}
+	.w3-badge {height:13px;width:13px;padding:0}
+	/* Add a card effect for articles */
+	/* Add a gray background color with some padding */
+	.blogbox {
+	  padding: 30px;
+	  background: #f1f1f1;
+	}
+	.card {
+	   background-color: white;
+	   padding: 60px;
+	   margin-top: 20px;
+	}
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	  padding: 60px;
+	  margin-top: 20px;
+	}
+
+	/* Footer */
+	.footer {
+	  padding: 20px;
+	  text-align: center;
+	  background: #ddd;
+	  margin-top: 20px;
+	}
+	.cover-photo {
+		width: 100%;
+		height: auto;
+	}
+	.container {
+	  position: relative;
+	  text-align: center;
+	  color: white;
+	}
+	* {
+	box-sizing: border-box;
+	}
+	.centered {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+	.bottom {
+	  position: absolute;
+	  top: 90%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+	.column {
+	  float: left;
+	  width: 33.33%;
+	  padding: 10px; 
+	}
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	@media screen and (max-width: 600px) {
+    .column {
+		width: 100%;
+		float:left;
+		padding: 10px;
+    }
+	}
+}
+</style>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%% LOADING THE STYLE SHEET %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<link rel="stylesheet" href="style.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%% MAIN BODY OF THE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+	<!-- wc-wide: letter spacing 4px -->
+	<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+	<!-- %%%%%%%%%%%%%%%%%%%%%% NAVIGATION BAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+	<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+	<div class="w3-top w3-bar w3-white w3-wide w3-padding w3-card">
+		<a href="index.html#home" class="w3-bar-item w3-button"><b>Riniki's</b> Gallery</a>
+		
+		<!-- Float links to the right. Hide them on small screens -->
+		<div class="w3-right w3-hide-small">
+			<a href="index.html#home" class="w3-bar-item w3-button">Home</a>
+			<a href="index.html#about" class="w3-bar-item w3-button">About</a>
+			<a href="index.html#projects" class="w3-bar-item w3-button">Portfolio</a>
+			<a href="blog.html" class="w3-bar-item w3-button">Blog</a>
+			<a href="index.html#contact" class="w3-bar-item w3-button">Contact</a>
+		</div>
+	</div>
+
+<!--- End of Header -->
+<body>
+<!---
+<div class="w3-left" style="padding-top: 30px;">
+	<h1 class="w3-wide"></h1>
+</div>
+-->
+<div class="blogbox">
+	<div class="row">
+		<div class="card">
+			<!--- picture column -->
+			<div class="column" style="width:30%">
+				<img src="Images/bird.png" alt="Hummingbird Earned Freedom" style="width:100%; padding-top:25px">
+			</div>
+			<!--- Writng Column -->	
+			<div class="column" style="width:70%">
+				<h1 class="w3-center-left w3-wide">I am taking your life</h1><br>
+				<h5 class="w3-center-left"> June 19, 2021 </h5>
+				<div style="text-align:justify; text-justify: inter-word;">
+					<p>Writing, sometimes, can be emotionally taxing - you create very much alive characters; watch them grow, contemplate the choices they make, good and bad, embrace their secrets, deepest desires, whims, wounds, and dreams. And, sometimes, you have to pick up that axe and chop them down into pieces- you take their lives.</p>
+					
+					<p>What does it really mean to "take someone's life?" What are you exactly "taking?" Are you taking some years that someone would have had left had you not taken that particular life? You add those numbers to your own, and hey, now you can have more ice cream! Maybe you are wiser, and you are planning to lock this life away in a vault in a bank as a currency to get something you desire or as insurance for your old age or your kids.</p>
+					
+					<p>Perhaps you would rather blow the life out and delightedly watch as it becomes smoke and disappears, "Huh! There! I made you go poof"! Or, is it just that the power and thrill you feel the moment you utter, "I am taking your life", and you do, help you release?</p>
+					
+					<p>Perhaps, you are otherwise bleak - someone who cannot stand herself/himself alone in your bedroom; another of those humans who fail to understand the rarity of some atoms and molecules just colliding together, some specific chains of reactions going just right, to form a structure of the skin, muscles, vessels, and bones; one that is capable of thinking, making choices, keeping secrets, having desires, whims, wounds, and dreams.</p>
+					
+					<p>You are that person who draws the curtain on the stage as Romeo is about to drink the purple potion, and the audience goes, "Awww damn! I was waiting for that scene!"</p>
+					
+					<p> Long live the party-poopers!</>
+				</div>
+			</div>
+			<div style="text-align:justify; text-justify: inter-word;">
+				<p><i>Drawing &copy by Mir Ishruna Muniyat All Rights Reserved</i></p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	.mySlides {display:none}
+	.w3-left, .w3-right, .w3-badge {cursor:pointer}
+	.w3-badge {height:13px;width:13px;padding:0}
+	.cover-photo {
+		width: 100%;
+		height: auto;
+	}
+	.container {
+	  position: relative;
+	  text-align: center;
+	  color: white;
+	}
+	* {
+	box-sizing: border-box;
+	}
+	.centered {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+	.bottom {
+	  position: absolute;
+	  top: 90%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+	.column {
+	  float: left;
+	  width: 33.33%;
+	  padding: 10px; 
+	}
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	@media screen and (max-width: 600px) {
+    .column {
+		width: 100%;
+    }
+	}
+}
+</style>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%% LOADING THE STYLE SHEET %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<link rel="stylesheet" href="style.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%% MAIN BODY OF THE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<body>
+
+	<!-- wc-wide: letter spacing 4px -->
+	<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+	<!-- %%%%%%%%%%%%%%%%%%%%%% NAVIGATION BAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+	<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+	<div class="w3-top w3-bar w3-white w3-wide w3-padding w3-card">
+		<a href="#home" class="w3-bar-item w3-button"><b>Riniki's</b> Gallery</a>
+		
+		<!-- Float links to the right. Hide them on small screens -->
+		<div class="w3-right w3-hide-small">
+			<a href="index.html" class="w3-bar-item w3-button">Home</a>
+			<a href="index.html#about" class="w3-bar-item w3-button">About</a>
+			<a href="index.html#projects" class="w3-bar-item w3-button">Portfolio</a>
+			<a href="blog.html" class="w3-bar-item w3-button">Blog</a>
+			<a href="index.html#contact" class="w3-bar-item w3-button">Contact</a>
+		</div>
+	</div>
+
+	<div class="container" style="padding-top: 55px;">
+		<img src="Images/waves.png" style="width:100%;">
+		<!--- <div class="centered cover"> Welcome to my personal blog </div> -->
+	</div>
+
+	<div class="w3-center" style="padding-top: 25px;">
+		<h1 class="w3-wide">Welcome to my personal blog!</h1><br> <i>This page is under development</i> </br>
+	</div>
+</head>
+</body>
+
+<div class="row">
+	<div class="column">
+		<div class="container">
+			<a href="non-fiction.html">
+				<img src="Images/yellow_shoes.jpg" style="width:100%;">
+				<div class="bottom"> Non-Fiction </div>
+			</a>
+		</div>
+	</div>
+  
+
+	<div class="column">
+		<div class="container">
+				<img src="Images/yellow_shoes.jpg" style="width:100%;">
+				<div class="bottom"> Writing on Science </div>
+		</div>
+	</div>
+	
+	<div class="column">
+		<div class="container">
+			<img src="Images/yellow_shoes.jpg" style="width:100%;">
+			<div class="bottom"> Writing on Art </div>
+		</div>
+	</div>
+</div>
+
+</html>
