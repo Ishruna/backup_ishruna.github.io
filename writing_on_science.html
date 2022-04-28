@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	.mySlides {display:none}
+	.w3-left, .w3-right, .w3-badge {cursor:pointer}
+	.w3-badge {height:13px;width:13px;padding:0}
+	/* Add a card effect for articles */
+	/* Add a gray background color with some padding */
+	.blogbox {
+	  padding: 30px;
+	  background: #f1f1f1;
+	}
+	.card {
+	   background-color: white;
+	   padding: 60px;
+	   margin-top: 20px;
+	}
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	  padding: 60px;
+	  margin-top: 20px;
+	}
+
+	/* Footer */
+	.footer {
+	  padding: 20px;
+	  text-align: center;
+	  background: #ddd;
+	  margin-top: 20px;
+	}
+	.cover-photo {
+		width: 100%;
+		height: auto;
+	}
+	.container {
+	  position: relative;
+	  text-align: center;
+	  color: white;
+	}
+	* {
+	box-sizing: border-box;
+	}
+	.centered {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+	.bottom {
+	  position: absolute;
+	  top: 90%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+	.column {
+	  float: left;
+	  width: 33.33%;
+	  padding: 10px; 
+	}
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	@media screen and (max-width: 600px) {
+    .column {
+		width: 100%;
+		float:left;
+		padding: 10px;
+    }
+	}
+}
+</style>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%% LOADING THE STYLE SHEET %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<link rel="stylesheet" href="style.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%% MAIN BODY OF THE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+	<!-- wc-wide: letter spacing 4px -->
+	<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+	<!-- %%%%%%%%%%%%%%%%%%%%%% NAVIGATION BAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+	<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+	<div class="w3-top w3-bar w3-white w3-wide w3-padding w3-card">
+		<a href="index.html#home" class="w3-bar-item w3-button"><b>Riniki's</b> Gallery</a>
+		
+		<!-- Float links to the right. Hide them on small screens -->
+		<div class="w3-right w3-hide-small">
+			<a href="index.html#home" class="w3-bar-item w3-button">Home</a>
+			<a href="index.html#about" class="w3-bar-item w3-button">About</a>
+			<a href="index.html#projects" class="w3-bar-item w3-button">Portfolio</a>
+			<a href="blog.html" class="w3-bar-item w3-button">Blog</a>
+			<a href="index.html#contact" class="w3-bar-item w3-button">Contact</a>
+		</div>
+	</div>
+
+<!--- End of Header -->
+<body>
+<!---
+<div class="w3-left" style="padding-top: 30px;">
+	<h1 class="w3-wide"></h1>
+</div>
+-->
+<div class="blogbox">
+	<div class="row">
+		<div class="card">
+			<!--- picture column -->
+			<div class="column" style="width:30%">
+				<img src="Images/galaxy.png" alt="Galaxy by MIM Riniki" style="width:100%; padding-top:25px">
+			</div>
+			<!--- Writng Column -->	
+			<div class="column" style="width:70%">
+				<h1 class="w3-center-left w3-wide">An Imaginary Conversation with Babbage</h1><br>
+				<h5 class="w3-center-left"> April 19, 2021 </h5>
+				<h6 class="w3-center-left"> <i> I wrote this piece as part of the Best of Banff Science Communications program in 2021. The challenge was to explain the internet to someone who woke up from a coma after 150 years in less than 250 words. I thought it would be fun to explain the internet to Charles Babbage, the inventor of the first mechanical computer, who passed away around 150 years ago. </i>
+				<div style="text-align:justify; text-justify: inter-word;">
+					<p>"Now, just a moment! How did you exactly send my information through that thing, the black rectangular prism?"<br>
+						"Ah! This is a digital programmable computer, Mr. Babbage, nothing but your own brainchild!"<br>
+						"Unbelievable! But the computer I envisioned is much larger!"<br>
+						"Fortunately, many great inventions over the past 150 have made it possible to design computers small enough to fit in your hand."<br>
+						"Is that so? This era never ceases to amaze me. But how did you actually "send" the information? My invention did not have such a feature."<br>
+						"We sent your information through something we call the Internet, which interconnects all the computers in the world. Internet is what made it possible to send your information to the bank without us needing to leave this room."<br>
+						"Fascinating! Please tell me more about this Internet. How does it work?"<br>
+						"You can think of the Internet as a modern-day postal service. Much like house numbers, every computer has a unique address. And there is a server, much like a post office, which makes sure that the information goes to the correct address. It all happens at lightning speed, quite literally."<br>
+						"But how is the information transmitted?"<br>
+						"Information can be transmitted through old-fashioned telephone wires connecting the network of computers, or even without the need of any wire, through radio waves."<br>
+						"Intriguing! It seems there is much to catch up on! Now, before we go meet the President, may I try tinkering with it a bit?"<br>
+						"Absolutely, Sir!"</p>
+					<p> </p><br><br>
+				</div>
+			</div>
+			<div class="w3-center" style="text-align:justify; text-justify: inter-word;">
+				<p><i>Drawing &copy by Mir Ishruna Muniyat All Rights Reserved</i></p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
